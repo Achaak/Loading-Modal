@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--<base href="/">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Title</title>
+    <meta name="description" content="Description" />
+    <meta property="og:title" content="Title" />
+    <meta property="og:description" content="Description" />
+    <meta property="og:image" content="" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="loading.css">        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- END CSS -->
+
+    <link rel="icon" href="">
+</head>
+<body>
+    <!-- HEADER -->
+        <header>
+
+        </header>
+    <!-- END HEADER -->
+    
+    <div class="loading"></div>
+
+    <!-- SECTION -->
+        <section>
+            <a href="" class='loading-redirect'>Redirect link</a>
+            <form class='loading-insert-data'>
+                <input type='submit' value="Insert data link">
+            </form>
+        </section>
+    <!-- END SECTION -->
+
+
+    
+    <!-- FOOTER -->
+        <footer>
+
+        </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- JAVASCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="loading.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){                
+                $('a').click(function(e){
+                    e.preventDefault();
+                });        
+                $('form').submit(function(e){
+                    e.preventDefault();
+                });
+            });
+        </script>
+    <!-- END JAVASCRIPT -->
+</body>
+</html>
